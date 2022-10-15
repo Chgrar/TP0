@@ -16,51 +16,131 @@
 <body>
     <header>
         <div class="nav">
-            <!-- NO ME FUNCIONA EL HREF parece que funciona con <a> -->
-            <button class="button button-active" href="#">Home</button>
-            <button class="button" href="#specials">Especiales del mes</button>
-            <button class="button" href="#about">Nosotros</button>
-            <button class="button" href="#menu">Menu</button>
-            <button class="button" href="#contact">Contacto</button>
-            <small>W3School-63</small>
+            <ul>
+                <li><a class="button button-active" href="#">Home</a></li>
+                <li><a class="button" href="#specials">Especiales del mes</a></li>
+                <li><a class="button" href="#about">Nosotros</a></li>
+                <li><a class="button" href="#menu">Menú</a></li>
+                <li><a class="button" href="#contact">Contacto</a></li>
+            </ul>
         </div>
     </header>
 
     <main>
+        <!-- HOME -->
         <section class="home">
             HOME - Armar carrousel de fotitos y textos lindos
         </section>
 
+        <!-- ICONS -->
         <section class="icons">
             <div class="icons1">
-                Icono 1.
+                <img src="media/icon-vege.svg" alt="Canasta de verduras">
+                <h3>Sólo vegetales</h3>
+                <p>Todas nuestras recetas están 100% realizadas con vegetales provenientes de granjas orgánicas certificadas.</p>
             </div>
             <div class="icons2">
-                Icono 2.
+                <img src="media/icon-coffee.svg" alt="Jarra de Café">
+                <h3>Bebidas naturales</h3>
+                <p>Todas nuestras bebibas son realizadas con productos naturales.</p> 
+                <p>En ningún caso agregamos azúcares o edulcorantes.</p>
             </div>
             <div class="icons3">
-                Icono 3.
+                <img src="media/icon-sweet.svg" alt="Postre">
+                <h3>Postres artesanales</h3>
+                <p>Todos nuestros postres son manufacturados artesanalmente a metros de donde van a ser degustados.</p> 
+                <p>Sólo producimos lo que se va a consumir en el día.</p>
+            </div>            
+        </section>
+        <ul>
+            <li><a class="button-top" href="#">Go top</a></li>
+        </ul>
+
+        <!-- MOUNTH SPECIALS -->
+        <section id="specials" class="mounth">
+            <div>
+                <img src="media/img/special-1.png" alt="Hojas verdes"/>
             </div>
-        </section>
+            <div>
+                <h2>Hojas verdes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <span><b>19$</b></span>
+            </div>
+            
+            <div>
+                <img src="media/img/special-2.png" alt="Crema de garbanzos"/>
+            </div>
+            <div>
+                <h2>Crema de garbanzos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <span><b>25$</b></span>
+            </div>
 
-        <section id="specials" class="mountly">
-            MOUNTLY - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius laboriosam quos velit, quaerat alias corrupti ipsa tenetur eum? Rem ab labore dolorum, quidem magni vel unde aliquam veritatis assumenda repudiandae?
-        </section>
+            <div>
+                <img src="media/img/special-3.png" alt="Semillas y hojas"/>
+            </div>
+            <div>
+                <h2>Semillas y hojas moradas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <span><b>32$</b></span>
+            </div>
 
+            <div>
+                <img src="media/img/special-4.png" alt="Frutos del bosque"/>
+            </div>
+            <div>
+                <h2>Frutos del bosque</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <span><b>23$</b></span>
+            </div>
+
+            <div>
+                <img src="media/img/special-5.png" alt="Rosca Centeno"/>
+            </div>
+            <div>
+                <h2>Rosca de centeno</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <span><b>21$</b></span>
+            </div>
+
+            <div>
+                <img src="media/img/special-6.png" alt="Jugo de sandía"/>
+            </div>
+            <div>
+                <h2>Juego de sandía</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <span><b>19$</b></span>
+            </div>
+
+        </section>
+        <ul>
+            <li><a class="button-top" href="#">Go top</a></li>
+        </ul>
+
+        <!-- ABOUT -->
         <section id="about" class="about">
             ABOUT - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, ducimus explicabo. Unde labore praesentium animi quibusdam ducimus excepturi nobis culpa ratione illo tempore maiores necessitatibus, perspiciatis dicta cupiditate exercitationem accusamus.
         </section>
+        <ul>
+            <li><a class="button-top" href="#">Go top</a></li>
+        </ul>
 
+        <!-- MENU -->
         <section id="menu" class="menu">
             MENU - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iste libero tempore ea, quos, rerum voluptatem quibusdam animi ratione ullam consequatur quasi recusandae, pariatur dignissimos. Ipsum ex neque nemo quo.
         </section>
+        <ul>
+            <li><a class="button-top" href="#">Go top</a></li>
+        </ul>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-img">
             IMAGEN
         </div>
+
         <div>
             <div class="footer-contact">
                 FOOTER - CONTACT
@@ -69,8 +149,12 @@
                 FOOTER - FORM
             </div>
         </div>
-    </footer>
 
+        <ul>
+            <li><a class="button-top" href="#">Go top</a></li>
+        </ul>
+
+    </footer>
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
 </body>
