@@ -14,7 +14,7 @@
 
 </head>
 <body onload="inicio()">
-    <header>
+    <header>  <!-- hacer nav con boostrap --> 
         <div class="nav">
             <ul>
                 <li><a class="button button-active" href="#">Home</a></li>
@@ -59,15 +59,16 @@
             <li><a class="button-top" href="#">Go top</a></li>
         </ul>
 
-        <!-- MOUNTH SPECIALS -->
+        <!-- MOUNTH SPECIALS -->  <!-- poner los titulos dentro de los seccions asi se ven cuando hacemos click en el apartado --> 
         <h2 class="seccion">Especiales del mes</h2>
         <section id="specials" class="mounth">
+            
             <div>
                 <img src="media/img/special-1.png" alt="Hojas verdes"/>
             </div>
             <div>
-                <h2>Hojas verdes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <h2>Mix de Hojas verdes</h2>
+                <p>Las verduras de hojas verdes son fuentes saludables de carbohidratos. También contienen proteínas y otros nutrientes.</p>
                 <span><b>$190</b></span>
             </div>
             
@@ -75,8 +76,8 @@
                 <img src="media/img/special-2.png" alt="Crema de garbanzos"/>
             </div>
             <div>
-                <h2>Crema de garbanzos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <h2>Hummus</h2>
+                <p>Rico en minerales y vitaminas como la Vitamina A, vitamina B (B1 -tiamina, B2, -riboflavina, B3 -niacina, B6 , B9 – folacina), vitamina C y vitamina E.</p>
                 <span><b>$250</b></span>
             </div>
 
@@ -85,7 +86,7 @@
             </div>
             <div>
                 <h2>Semillas y hojas moradas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <p>Estos compuestos tienen un efecto antioxidante y antiinflamatorio y beneficios para la salud cardiovascular.</p>
                 <span><b>$320</b></span>
             </div>
 
@@ -94,7 +95,7 @@
             </div>
             <div>
                 <h2>Frutos del bosque</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <p>Ricas en vitamina E, con propiedades antioxidantes y antiinflamatorias que mejoran el sistema inmune, la piel y el cabello.</p>
                 <span><b>$230</b></span>
             </div>
 
@@ -103,7 +104,8 @@
             </div>
             <div>
                 <h2>Rosca de centeno</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <p>
+                    Es útil para el control de peso, por su bajo nivel de grasa y por las propiedades saciantes que tiene su abundante fibra.</p>
                 <span><b>$210</b></span>
             </div>
 
@@ -112,12 +114,12 @@
             </div>
             <div>
                 <h2>Jugo de sandía</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni quae repellat?</p>
+                <p>Ayuda a combatir los problemas estomacales y a disminuir la hinchazón, así como la sensación de pesadez.</p>
                 <span><b>$190</b></span>
             </div>
 
         </section>
-        <ul>
+        <ul>  <!-- ver de agrgarle una flecha y ponerlo dentro del section --> 
             <li><a class="button-top" href="#">Go top</a></li>
         </ul>
 
@@ -233,24 +235,13 @@
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER --> 
+     <!-- ver como alinear a la deracha los titulos y el copyrigh centrar --> 
     <footer>
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2138.408071342106!2d-72.54051216272597!3d42.121097982335705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6e62c08e4b81f%3A0x1d1808da41b9aabd!2sSpringfield%2C%20Massachusetts%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1665786086443!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-            <div class="footer-contact">
-                <div>
-                    <h3>GreenVeggie Restaurant</h3>
-                    <p>Av. Santa Fe 742<br>CABA</p>
-                </div>
-                <div>
-                    <h3>Reservas</h3>
-                    <p>reservas@greenvegggie.com<br>+54 9 11 5772-2512</p>
-                </div>
-            </div>
+            <h3>Contáctenos</h3>
             <div id="contact" class="footer-form">
-                <h3>Contáctenos</h3>
+              
                 <form>
                     <input type="text" name="name" placeholder="Nombre">
                     <input type="email" name="email" placeholder="E-mail">
@@ -258,20 +249,42 @@
                     <br>
                     <input type="submit" value="Enviar">
                 </form>
-                <ul>
-                    <li><a class="button-top" href="#">Go top</a></li>
-                </ul>
             </div>
+             <!-- hacer con css si llegamos --> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="footer-contact">
+                <div>
+                    <h3>GreenVeggie Restaurant</h3>
+                    <p>Av. Santa Fe 742<br>CABA</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Reservas</h3>
+                    <p>reservas@greenvegggie.com<br>+54 9 11 5772-2512</p>
+                </div>
+                <br>
+                <br>
+                <div class="socialmedia">
+                    <span>Nuestras redes </span>
+                    <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://myaccount.google.com/" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            <ul>
+                <li><a class="button-top" href="#">Go top</a></li>
+            </ul>
         </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3331694928893!2d-58.3769516!3d-34.5957358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab5f96632a5%3A0xbb7414cdabdad858!2sAv.%20Sta.%20Fe%20742%2C%20C1059%20CABA!5e0!3m2!1ses-419!2sar!4v1665944719099!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <p class="copyright"><code><i>Copyright 2022 by CodoACodo</i></code></p>
     </footer>
 
-    <div class="socialmedia">
-        <span>Nuestras redes </span>
-        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://myaccount.google.com/" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-    </div>
-    <p class="copyright"><code><i>Copyright 2022 by CodoACodo</i></code></p>
     
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
