@@ -1,4 +1,6 @@
 /* IMPORTS: Google Fonts, etc */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:600,300,300i&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 /* NORMALIZE */
 html{
@@ -11,8 +13,10 @@ html{
 }
 
 body{
+    font-family: "Merriweather", serif;
     font-size: 1.6rem;
     box-sizing: border-box;
+    background-color: rgba(0,127,0,0.24);
 }
 
 small{      /* Sólo lo utilizo como referencia - QUITAR */ 
@@ -20,7 +24,9 @@ small{      /* Sólo lo utilizo como referencia - QUITAR */
 }
 
 main{
-    background-color: khaki;
+    background-image: url("/assets/img/natura.jpg");
+    background-size: cover;
+    border-radius: 1.5rem;
 }
 
 header{
@@ -78,22 +84,38 @@ ul{
     background-image: url("/assets/img/hero01.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 30vw;
     margin: 2rem;
+    border-radius: 2rem;
+    animation-name: carrousel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 .home div{
     position: absolute;
-    right: 4rem;
-    top: 150px;
+    right: 6vw;
+    top: 18vw;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 2rem; 
     text-align: center;
-    font-size: 3rem;
+    font-size: min(5rem, 3.5vw);
+}
+
+@keyframes carrousel {
+    0% {background-image: url("/assets/img/hero01.png");} 
+    45% {background-image: url("/assets/img/hero01.png");} 
+    55%{background-image: url("/assets/img/hero02.png");}   
+    90% {background-image: url("/assets/img/hero02.png");}  
 }
 
 .icons{
     display: grid;
     text-align: center;
+    color:#111;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgba(0,0,127,0.5);
+    background-color: rgba(64,64,127,0.9);
+    border-radius: 2rem;
     padding: 5rem;
     gap: 3rem;
     margin: 2rem;
@@ -105,9 +127,9 @@ ul{
 
 .seccion{
     font-size: 4rem;
-    color: brown;
+    color: rgb(211, 36, 36);
     text-align: center;
-    background-color: rgba(0,127,0,0.24);
+    background-color: rgba(0,127,0,0.75);
     border-radius: 10rem 2rem;
     margin: 0 15rem -1.2rem 15rem;
 }
@@ -116,7 +138,8 @@ ul{
     display: grid;
     margin: 2rem;
     grid-template-columns: repeat(6, 1fr);
-    background-color: rgba(0,0,0,0.24);
+    background-color: rgba(127,127,0,0.8);
+    border-radius: 2rem;
 }
 .mounth div{
     text-align: center;
@@ -131,20 +154,23 @@ ul{
 }
 
 .about{
+    font-family: "Caveat", serif;
+    font-size: min(4rem, 3.5vw);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem;
-    background-color: rgba(127,0,0,0.24);
+    background-color: rgba(127,127,64,0.75);
+    border-radius: 2rem;
+
 }
 .about div{
     vertical-align: bottom;
-    text-align: end;
+    text-align: center;
 }
-.about #firma{
-    width: min(40%, 150px);
+#firma{
+    width: min(50%, 200px);
 }
-
-.about #canasta{
+#canasta{
     width: min(100%, 600px);
     height: auto;
 }
@@ -153,36 +179,28 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem;
-    background-color: rgba(0,0,0,0.24);
+    background-color: rgba(175,200,200,0.75);
     border: 5px solid rgba(0,0,127,0.5);
     border-radius: 2rem;
+    color: #161;
 }
-.menu .menu-name{
-    font-size: 2rem;
-    width: 80%;
-}
-.menu .menu-name td{
-    font-size: 2rem;
-    width: 80%;
-}
-.menu .menu-ingredients{
-    font-size: 1.4rem;
-    font-style: italic;
-}
-.menu th{
-    font-size: 2.5rem;
-    padding-top: 2.5rem;
-}
+.menu .menu-name td{ font-size: 2.5rem; }
+.menu .menu-ingredients{ font-size: 1.6rem; font-style: italic; }
+.menu th{ font-size: 2.5rem; padding-top: 2.5rem; }
 
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: #000;
+    text-shadow: 0 0 1rem #ccc;
     text-align: right;
     background-image: url("/assets/img/contact-bg.png");
     background-size: cover;
+    border-radius: 2rem;
     padding-right: 5vw;
     margin-top: 2rem;
 }
+footer iframe{ width: 50vw; height: 50vw; }
 
 input[type=text], input[type=email], select, textarea {
     width: min(100%, 500px);
@@ -205,23 +223,33 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+.socialmedia{
+    font-size: 4rem;
+    text-align: center;
+}
+.socialmedia span{
+    font-size: min(2rem, 5vw);
+    vertical-align: super;
+    color: rgb(100, 22, 76);
+}
+
+p.copyright{
+    text-align: center;
+}
+
+
 /* Media Query - RESPONSIVE */
 @media only screen and (max-width: 600px) {     /* For cellphones: */
-    body{
-        background-color: burlywood;   
-        grid-template-columns: auto;     
-    }
-    .button{
-        margin: 2rem 0 0 2rem;
-    }
+    .button{ margin: 2rem 0 0 2rem; }
+
+    .home{ height: 50vw; }
+    .home div { top: 36vw; }
 
     .icons{
         display: block;
         font-size: 1.6rem;
     }
-    .icons img{
-        width: 15%;
-    }
+    .icons img{ width: 15%; }
     .seccion{
         font-size: 2.8rem;
         border-radius: 5rem 1rem;
@@ -231,26 +259,30 @@ input[type=submit]:hover {
         grid-template-columns: repeat(2, 1fr);
         font-size: 1.6rem;
     }
-    .menu{
-        display: block;
-    }
+    .menu{ display: block; }
+    .menu th{ font-size: 1.8rem; }
+    .menu .menu-name td{ font-size: 1.7rem; }
+    .menu .menu-ingredients{ font-size: 1.2rem; }
+
     footer{
         display: block;
         background-image: none;   
         text-align: center;
     }
+    footer iframe{ width: 90vw; height: 75vw; }
+
     input[type=text], input[type=email], select, textarea {
         width: 80%;
     }
 
 }
 @media only screen and (min-width: 601px) and (max-width: 768px) {     /* For tablets: */
-    body{
-        background-color: darksalmon;
-    }    
     .button{
         margin: 2rem 2rem 0 2rem;
     }
+
+    .home{ height: 40vw; }
+    .home div { top: 28vw; }
 
     .icons{
         font-size: 1.6rem;
@@ -266,9 +298,19 @@ input[type=submit]:hover {
     .mounth{
         grid-template-columns: repeat(4, 1fr);
     }
+    .menu th{ font-size: 2rem; }
+    .menu .menu-name td{ font-size: 2rem; }
+    .menu .menu-ingredients{ font-size: 1.4rem; }
+
+    /*footer{ text-align: right; }*/
+
     footer{
-        text-align: right;
+        display: block;
+        background-image: none;   
+        text-align: center;
     }
+    footer iframe{ width: 75vw; height: 60vw; }
+
     input[type=text], input[type=email], select, textarea {
         width: 35rem;
     }
@@ -276,8 +318,6 @@ input[type=submit]:hover {
 
 /* No lo estoy usando, hago PC first, ja */
 @media only screen and (min-width: 769px) {     /* For Desktop: */
-    body{
-        background-color: #bbb;
-    }
+
 }
 

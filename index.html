@@ -13,7 +13,7 @@
 
 
 </head>
-<body>
+<body onload="inicio()">
     <header>
         <div class="nav">
             <ul>
@@ -60,7 +60,7 @@
         </ul>
 
         <!-- MOUNTH SPECIALS -->
-        <h2 class="seccion">Especiales de este mes</h2>
+        <h2 class="seccion">Especiales del mes</h2>
         <section id="specials" class="mounth">
             <div>
                 <img src="media/img/special-1.png" alt="Hojas verdes"/>
@@ -124,14 +124,12 @@
         <!-- ABOUT -->
         <h2 class="seccion">Nuestra empresa</h2>
         <section id="about" class="about">
-
-            <div>
-                <img id="canasta" src="media/img/beans.png" alt="Canasta de porotos"/>
-            </div>
-
             <div>
                 <p>Somos una empresa joven que se esmera cada día en hacerte llegar los mejores productos naturales procesados de modo que puedas disfrutar del verdadero saber de una receta natural bien equilibrada.</p>
-                <img id="firma" src="media/signature.png" alt="Firma"/>                
+                <img id="firma" src="/media/signature.png" alt="Firma"/>                
+            </div>
+            <div>
+                <img id="canasta" src="/media/img/aboutus.png" alt="Canasta de porotos"/>
             </div>
         </section>
         <ul>
@@ -238,7 +236,7 @@
     <!-- FOOTER -->
     <footer>
         <div>
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2138.408071342106!2d-72.54051216272597!3d42.121097982335705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6e62c08e4b81f%3A0x1d1808da41b9aabd!2sSpringfield%2C%20Massachusetts%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1665786086443!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div>
             <div class="footer-contact">
@@ -265,11 +263,23 @@
                 </ul>
             </div>
         </div>
-        
     </footer>
-    <p><code><i>Copyright 2022 by CodoACodo</i></code></p>
 
+    <div class="socialmedia">
+        <span>Nuestras redes </span>
+        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://myaccount.google.com/" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+    <p class="copyright"><code><i>Copyright 2022 by CodoACodo</i></code></p>
+    
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/63cf427ec6.js" crossorigin="anonymous"></script>
+    <script>
+        function inicio(){
+            
+        }
+    </script>
 </body>
 </html>
