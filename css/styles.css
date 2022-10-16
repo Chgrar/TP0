@@ -110,14 +110,41 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 1px solid blue;
-    height: 200px;
+
+}
+.about div{
+    vertical-align: bottom;
+    text-align: end;
+}
+.about #firma{
+    width: min(40%, 150px);
+}
+
+.about #canasta{
+    width: min(100%, 600px);
+    height: auto;
 }
 
 .menu{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 1px solid blue;
-    height: 200px;
+}
+.menu .menu-name{
+    font-size: 2rem;
+    width: 80%;
+}
+.menu .menu-name td{
+    font-size: 2rem;
+    width: 80%;
+}
+.menu .menu-ingredients{
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.menu th{
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 footer{
@@ -126,7 +153,6 @@ footer{
     border: 1px solid blue;
     height: 200px;
 }
-
 .footer-img{    
     grid-area: footer-img;
     border: 1px solid green;
@@ -155,6 +181,10 @@ footer{
     }
     .mounth{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .menu{
+        display: block;
+        border: 1px solid blue;
     }
     footer{
         display: grid;
