@@ -1,5 +1,5 @@
 /* IMPORTS: Google Fonts, etc */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:600,300,300i&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 /* NORMALIZE */
@@ -24,7 +24,7 @@ small{      /* Sólo lo utilizo como referencia - QUITAR */
 }
 
 main{
-    background-image: url("/assets/img/natura.jpg");
+    background-image: url("/media/img/natura.jpg");
     background-size: cover;
     border-radius: 1.5rem;
 }
@@ -66,13 +66,17 @@ ul{
     transition-duration: 0.5s;
 }
 .button-top{
-    color: red;
+    color: rgb(255, 0, 0);
     background-color: rgba(0,0,0,0.25);
+    border-radius: inherit;
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 700;    
+    text-align: center;    
+    width: fit-content;
     cursor: pointer;
     padding: .7rem 1.5rem;
-    margin: 2.5rem;
+    /*margin: 2.5rem;*/
 }
 .button-top:hover {     /* Sombra al hacer hover */
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -81,7 +85,7 @@ ul{
 }
 
 .home{
-    background-image: url("/assets/img/hero01.png");
+    background-image: url("/media/img/hero01.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vw;
@@ -103,10 +107,10 @@ ul{
 }
 
 @keyframes carrousel {
-    0% {background-image: url("/assets/img/hero01.png");} 
-    45% {background-image: url("/assets/img/hero01.png");} 
-    55%{background-image: url("/assets/img/hero02.png");}   
-    90% {background-image: url("/assets/img/hero02.png");}  
+    0% {background-image: url("/media/img/hero01.png");} 
+    45% {background-image: url("/media/img/hero01.png");} 
+    55%{background-image: url("/media/img/hero02.png");}   
+    90% {background-image: url("/media/img/hero02.png");}  
 }
 
 .icons{
@@ -193,12 +197,15 @@ footer{
     grid-template-columns: 1fr 1fr;
     color: #000;
     text-shadow: 0 0 1rem #ccc;
-    text-align: right;
-    background-image: url("/assets/img/contact-bg.png");
-    background-size: cover;
+    text-align: center;
+    background-image: url("/media/img/contact-bg.png");
+    background-size: cover;    
     border-radius: 2rem;
     padding-right: 5vw;
     margin-top: 2rem;
+}
+footer h3, footer p{
+    background-color: rgba(255,255,255,0.25);
 }
 footer iframe{ width: 50vw; height: 50vw; }
 
@@ -207,7 +214,6 @@ input[type=text], input[type=email], select, textarea {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-    resize: vertical;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50),0 17px 50px 0 rgba(0,0,0,0.75);
 }
 input[type=submit] {
@@ -217,7 +223,7 @@ input[type=submit] {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    float: right;
+    float: center;
 }
 input[type=submit]:hover {
     background-color: #45a049;

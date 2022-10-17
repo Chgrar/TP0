@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Agregar Metadata SEO, etc-->
-
+    
     <title>GreenVeggie Restaurant</title>
+    <link rel="icon" href="/media/favicon.png" type="image/png"/>
 
     <!-- StyleSheets -->
     <link rel="stylesheet" href="css/styles.css">
@@ -14,7 +15,7 @@
 
 </head>
 <body onload="inicio()">
-    <header>  <!-- hacer nav con boostrap --> 
+    <header>  <!-- TODO nav con boostrap --> 
         <div class="nav">
             <ul>
                 <li><a class="button button-active" href="#">Home</a></li>
@@ -36,7 +37,7 @@
 
         <!-- ICONS -->
         <h2 class="seccion">Nuestros productos</h2>
-        <section class="icons">
+        <section class="icons">            
             <div class="icons1">
                 <img src="media/icon-vege.svg" alt="Canasta de verduras">
                 <h3>Sólo vegetales</h3>
@@ -53,190 +54,198 @@
                 <h3>Postres artesanales</h3>
                 <p>Todos nuestros postres son manufacturados artesanalmente a metros de donde van a ser degustados.</p> 
                 <p>Sólo producimos lo que se va a consumir en el día.</p>
+            </div>        
+            <a class="button-top fa-sharp fa-solid fa-arrow-up" href="#"> Go top</a>
+
+            <!-- TODO ver de agregarle una flecha y ponerlo dentro del section  -->
+            <!--
+            <ul>  
+                <li><a class="button-top fa-sharp fa-solid fa-arrow-up" href="#">Go top</a></li>
+            </ul>
+            
+            <ul>  
+                <li><a class="button-top" href="#">Go top</a></li>
+            </ul>
+            -->
+            
+
+        </section>
+
+        <!-- MOUNTH SPECIALS -->  
+        <!-- DONE! poner los titulos dentro de los seccions asi se ven cuando hacemos click en el apartado --> 
+        <section id="specials">
+            <h2 class="seccion">Especiales del mes</h2>
+            <div class="mounth">
+                <div>
+                    <img src="media/img/special-1.png" alt="Hojas verdes"/>
+                </div>
+                <div>
+                    <h2>Mix de Hojas verdes</h2>
+                    <p>Las verduras de hojas verdes son fuentes saludables de carbohidratos. También contienen proteínas y otros nutrientes.</p>
+                    <span><b>$190</b></span>
+                </div>
+                
+                <div>
+                    <img src="media/img/special-2.png" alt="Crema de garbanzos"/>
+                </div>
+                <div>
+                    <h2>Hummus</h2>
+                    <p>Rico en minerales y vitaminas como la Vitamina A, vitamina B (B1 -tiamina, B2, -riboflavina, B3 -niacina, B6 , B9 – folacina), vitamina C y vitamina E.</p>
+                    <span><b>$250</b></span>
+                </div>
+    
+                <div>
+                    <img src="media/img/special-3.png" alt="Semillas y hojas"/>
+                </div>
+                <div>
+                    <h2>Semillas y hojas moradas</h2>
+                    <p>Estos compuestos tienen un efecto antioxidante y antiinflamatorio y beneficios para la salud cardiovascular.</p>
+                    <span><b>$320</b></span>
+                </div>
+    
+                <div>
+                    <img src="media/img/special-4.png" alt="Frutos del bosque"/>
+                </div>
+                <div>
+                    <h2>Frutos del bosque</h2>
+                    <p>Ricas en vitamina E, con propiedades antioxidantes y antiinflamatorias que mejoran el sistema inmune, la piel y el cabello.</p>
+                    <span><b>$230</b></span>
+                </div>
+    
+                <div>
+                    <img src="media/img/special-5.png" alt="Rosca Centeno"/>
+                </div>
+                <div>
+                    <h2>Rosca de centeno</h2>
+                    <p>
+                        Es útil para el control de peso, por su bajo nivel de grasa y por las propiedades saciantes que tiene su abundante fibra.</p>
+                    <span><b>$210</b></span>
+                </div>
+    
+                <div>
+                    <img src="media/img/special-6.png" alt="Jugo de sandía"/>
+                </div>
+                <div>
+                    <h2>Jugo de sandía</h2>
+                    <p>Ayuda a combatir los problemas estomacales y a disminuir la hinchazón, así como la sensación de pesadez.</p>
+                    <span><b>$190</b></span>
+                </div>
+                <a class="button-top fa-sharp fa-solid fa-arrow-up" href="#"> Go top</a>
+            </div>
+                
+        </section>
+        
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="seccion">Nuestra empresa</h2>
+            <div class="about">
+                <div>
+                    <p>Somos una empresa joven que se esmera cada día en hacerte llegar los mejores productos naturales procesados de modo que puedas disfrutar del verdadero saber de una receta natural bien equilibrada.</p>
+                    <img id="firma" src="/media/signature.png" alt="Firma"/>                
+                </div>
+                <div>
+                    <img id="canasta" src="/media/img/aboutus.png" alt="Canasta de porotos"/>
+                </div>
+                <a class="button-top fa-sharp fa-solid fa-arrow-up" href="#"> Go top</a>
             </div>            
         </section>
-        <ul>
-            <li><a class="button-top" href="#">Go top</a></li>
-        </ul>
-
-        <!-- MOUNTH SPECIALS -->  <!-- poner los titulos dentro de los seccions asi se ven cuando hacemos click en el apartado --> 
-        <h2 class="seccion">Especiales del mes</h2>
-        <section id="specials" class="mounth">
-            
-            <div>
-                <img src="media/img/special-1.png" alt="Hojas verdes"/>
-            </div>
-            <div>
-                <h2>Mix de Hojas verdes</h2>
-                <p>Las verduras de hojas verdes son fuentes saludables de carbohidratos. También contienen proteínas y otros nutrientes.</p>
-                <span><b>$190</b></span>
-            </div>
-            
-            <div>
-                <img src="media/img/special-2.png" alt="Crema de garbanzos"/>
-            </div>
-            <div>
-                <h2>Hummus</h2>
-                <p>Rico en minerales y vitaminas como la Vitamina A, vitamina B (B1 -tiamina, B2, -riboflavina, B3 -niacina, B6 , B9 – folacina), vitamina C y vitamina E.</p>
-                <span><b>$250</b></span>
-            </div>
-
-            <div>
-                <img src="media/img/special-3.png" alt="Semillas y hojas"/>
-            </div>
-            <div>
-                <h2>Semillas y hojas moradas</h2>
-                <p>Estos compuestos tienen un efecto antioxidante y antiinflamatorio y beneficios para la salud cardiovascular.</p>
-                <span><b>$320</b></span>
-            </div>
-
-            <div>
-                <img src="media/img/special-4.png" alt="Frutos del bosque"/>
-            </div>
-            <div>
-                <h2>Frutos del bosque</h2>
-                <p>Ricas en vitamina E, con propiedades antioxidantes y antiinflamatorias que mejoran el sistema inmune, la piel y el cabello.</p>
-                <span><b>$230</b></span>
-            </div>
-
-            <div>
-                <img src="media/img/special-5.png" alt="Rosca Centeno"/>
-            </div>
-            <div>
-                <h2>Rosca de centeno</h2>
-                <p>
-                    Es útil para el control de peso, por su bajo nivel de grasa y por las propiedades saciantes que tiene su abundante fibra.</p>
-                <span><b>$210</b></span>
-            </div>
-
-            <div>
-                <img src="media/img/special-6.png" alt="Jugo de sandía"/>
-            </div>
-            <div>
-                <h2>Jugo de sandía</h2>
-                <p>Ayuda a combatir los problemas estomacales y a disminuir la hinchazón, así como la sensación de pesadez.</p>
-                <span><b>$190</b></span>
-            </div>
-
-        </section>
-        <ul>  <!-- ver de agrgarle una flecha y ponerlo dentro del section --> 
-            <li><a class="button-top" href="#">Go top</a></li>
-        </ul>
-
-        <!-- ABOUT -->
-        <h2 class="seccion">Nuestra empresa</h2>
-        <section id="about" class="about">
-            <div>
-                <p>Somos una empresa joven que se esmera cada día en hacerte llegar los mejores productos naturales procesados de modo que puedas disfrutar del verdadero saber de una receta natural bien equilibrada.</p>
-                <img id="firma" src="/media/signature.png" alt="Firma"/>                
-            </div>
-            <div>
-                <img id="canasta" src="/media/img/aboutus.png" alt="Canasta de porotos"/>
-            </div>
-        </section>
-        <ul>
-            <li><a class="button-top" href="#">Go top</a></li>
-        </ul>
 
         <!-- MENU -->
-        <h2 class="seccion">Nuestro Menú</h2>
-        <section id="menu" class="menu">
-            <!-- Armar varias secciones con Entradas, plato principal, bebidas y postres -->
-            <table>
-                <th id="starters">
-                    ENTRADAS
-                </th>
-
-                <tr class="menu-name">
-                    <td>Ensalada mixta</td>
-                    <td>$120</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(Lechuga, tomate, zanahoria, aceite de oliva, aceto)</td>
-                </tr>
-
-                <tr class="menu-name">
-                    <td>Ensalada de legumbres</td>
-                    <td>$180</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(Lechuga, garbanzos, arvejas verdes, aceite de oliva)</td>
-                </tr>
-
-                <th id="maindishes">
-                    PLATO PRINCIPAL
-                </th>
-
-                <tr class="menu-name">
-                    <td>Tortilla de verduras</td>
-                    <td>$250</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(Harina integral, acelga, huevo, queso parmesano, semillas de sésamo)</td>
-                </tr>
-
-                <tr class="menu-name">
-                    <td>Sopa de garbanzos</td>
-                    <td>$320</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(Garbanzos, crema de soja, arvejas verdes, aceite de oliva)</td>
-                </tr>
-
-            </table>
-
-            <table>
-                <th id="desserts">
-                    POSTRES
-                </th>
-
-                <tr class="menu-name">
-                    <td>Flan casero</td>
-                    <td>$120</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(flan casero, dulce de leche, chips de chocolate, semillas de algarroba)</td>
-                </tr>
-
-                <tr class="menu-name">
-                    <td>Budin de pan</td>
-                    <td>$150</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(Leche de soja, huevos, cacao)</td>
-                </tr>
-
-                <th id="drinks">
-                    BEBIDAS
-                </th>
-
-                <tr class="menu-name">
-                    <td>Exprimido de cítricos</td>
-                    <td>$120</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(naranja, mandarina, pomelo rosado)</td>
-                </tr>
-
-                <tr class="menu-name">
-                    <td>Frutos rojos</td>
-                    <td>$150</td>
-                </tr>
-                <tr class="menu-ingredients">
-                    <td>(Frutilla, arándanos, cereza)</td>
-                </tr>
-            </table>
-
-
+        <section id="menu">
+            <h2 class="seccion">Nuestro Menú</h2>
+            <div class="menu">
+                <!-- TODO Armar varias secciones con Entradas, plato principal, bebidas y postres -->
+                <table>
+                    <th id="starters">
+                        ENTRADAS
+                    </th>
+    
+                    <tr class="menu-name">
+                        <td>Ensalada mixta</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(Lechuga, tomate, zanahoria, aceite de oliva, aceto)</td>
+                    </tr>
+    
+                    <tr class="menu-name">
+                        <td>Ensalada de legumbres</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(Lechuga, garbanzos, arvejas verdes, aceite de oliva)</td>
+                    </tr>
+    
+                    <th id="maindishes">
+                        PLATO PRINCIPAL
+                    </th>
+    
+                    <tr class="menu-name">
+                        <td>Tortilla de verduras</td>
+                        <td>$250</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(Harina integral, acelga, huevo, queso parmesano, semillas de sésamo)</td>
+                    </tr>
+    
+                    <tr class="menu-name">
+                        <td>Sopa de garbanzos</td>
+                        <td>$320</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(Garbanzos, crema de soja, arvejas verdes, aceite de oliva)</td>
+                    </tr>
+    
+                </table>
+    
+                <table>
+                    <th id="desserts">
+                        POSTRES
+                    </th>
+    
+                    <tr class="menu-name">
+                        <td>Flan casero</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(flan casero, dulce de leche, chips de chocolate, semillas de algarroba)</td>
+                    </tr>
+    
+                    <tr class="menu-name">
+                        <td>Budin de pan</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(Leche de soja, huevos, cacao)</td>
+                    </tr>
+    
+                    <th id="drinks">
+                        BEBIDAS
+                    </th>
+    
+                    <tr class="menu-name">
+                        <td>Exprimido de cítricos</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(naranja, mandarina, pomelo rosado)</td>
+                    </tr>
+    
+                    <tr class="menu-name">
+                        <td>Frutos rojos</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr class="menu-ingredients">
+                        <td>(Frutilla, arándanos, cereza)</td>
+                    </tr>
+                </table>
+                <a class="button-top fa-sharp fa-solid fa-arrow-up" href="#"> Go top</a>
+            </div>
         </section>
-        <ul>
-            <li><a class="button-top" href="#">Go top</a></li>
-        </ul>
-
     </main>
 
     <!-- FOOTER --> 
-     <!-- ver como alinear a la deracha los titulos y el copyrigh centrar --> 
+     <!-- TODO ver como alinear a la derecha los titulos y el copyrigh centrar --> 
     <footer>
         <div>
             <h3>Contáctenos</h3>
@@ -250,7 +259,7 @@
                     <input type="submit" value="Enviar">
                 </form>
             </div>
-             <!-- hacer con css si llegamos --> 
+             <!-- TODO hacer con css si llegamos --> 
             <br>
             <br>
             <br>
@@ -274,9 +283,7 @@
                     <a href="https://myaccount.google.com/" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </div>
-            <ul>
-                <li><a class="button-top" href="#">Go top</a></li>
-            </ul>
+            <a class="button-top fa-sharp fa-solid fa-arrow-up" href="#"> Go top</a>
         </div>
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3331694928893!2d-58.3769516!3d-34.5957358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab5f96632a5%3A0xbb7414cdabdad858!2sAv.%20Sta.%20Fe%20742%2C%20C1059%20CABA!5e0!3m2!1ses-419!2sar!4v1665944719099!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -289,10 +296,5 @@
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/63cf427ec6.js" crossorigin="anonymous"></script>
-    <script>
-        function inicio(){
-            
-        }
-    </script>
 </body>
 </html>
