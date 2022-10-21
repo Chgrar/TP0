@@ -74,6 +74,7 @@ ul{
     font-weight: 700;    
     text-align: center;    
     width: fit-content;
+    height: 2rem;
     cursor: pointer;
     padding: .7rem 1.5rem;
     /*margin: 2.5rem;*/
@@ -118,7 +119,7 @@ ul{
     text-align: center;
     color:#111;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgba(64,64,127,0.9);
+    background-color: rgba(64,127,127,0.95);
     border-radius: 2rem;
     padding: 5rem;
     gap: 3rem;
@@ -131,9 +132,9 @@ ul{
 
 .seccion{
     font-size: 4rem;
-    color: rgb(211, 36, 36);
+    color: rgb(255, 36, 64);
     text-align: center;
-    background-color: rgba(0,127,0,0.75);
+    background-color: rgba(0,127,0,0.85);
     border-radius: 10rem 2rem;
     margin: 0 15rem -1.2rem 15rem;
 }
@@ -142,7 +143,7 @@ ul{
     display: grid;
     margin: 2rem;
     grid-template-columns: repeat(6, 1fr);
-    background-color: rgba(127,127,0,0.8);
+    background-color: rgba(127,127,0,0.9);
     border-radius: 2rem;
 }
 .mounth div{
@@ -163,7 +164,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem;
-    background-color: rgba(127,127,64,0.75);
+    background-color: rgba(127,127,64,0.85);
     border-radius: 2rem;
 
 }
@@ -183,7 +184,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem;
-    background-color: rgba(175,200,200,0.75);
+    background-color: rgba(175,200,200,0.80);
     border: 5px solid rgba(0,0,127,0.5);
     border-radius: 2rem;
     color: #161;
@@ -191,6 +192,13 @@ ul{
 .menu .menu-name td{ font-size: 2.5rem; }
 .menu .menu-ingredients{ font-size: 1.6rem; font-style: italic; }
 .menu th{ font-size: 2.5rem; padding-top: 2.5rem; }
+
+#apirest{
+    background-color: rgba(255,255,255,0.25);
+    color: rgba(127, 0, 127, 1);
+    text-align: center;
+    border-radius: 2rem;
+}
 
 footer{
     display: grid;

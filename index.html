@@ -14,7 +14,7 @@
 
 
 </head>
-<body onload="inicio()">
+<body onload="onStart()">
     <header>  <!-- TODO nav con boostrap --> 
         <div class="nav">
             <ul>
@@ -239,6 +239,11 @@
                         <td>(Frutilla, arándanos, cereza)</td>
                     </tr>
                 </table>
+                <div id="apirest">
+                    <p id="temp"></p>
+                    <p id="windspeed"></p>
+                    <p id="advice"></p>
+                </div>
                 <a class="button-top fa-sharp fa-solid fa-arrow-up" href="#"> Go top</a>
             </div>
         </section>
@@ -249,12 +254,11 @@
     <footer>
         <div>
             <h3>Contáctenos</h3>
-            <div id="contact" class="footer-form">
-              
-                <form>
-                    <input type="text" name="name" placeholder="Nombre">
-                    <input type="email" name="email" placeholder="E-mail">
-                    <textarea name="message" placeholder="Mensaje"></textarea>
+            <div id="contact" class="footer-form">              
+                <form action="https://formsubmit.co/savaing@hotmail.com" method="POST" id="form" target="_blank">
+                    <input type="text" name="name" placeholder="Nombre" id="name">
+                    <input type="email" name="email" placeholder="E-mail" id="email">
+                    <textarea name="message" placeholder="Mensaje" id="message" maxlength="200" rows="4"></textarea>
                     <br>
                     <input type="submit" value="Enviar">
                 </form>
