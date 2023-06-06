@@ -10,6 +10,7 @@ html{
 *{
     margin: 0.2rem;
     padding: 0.2rem;
+    
 }
 
 body{
@@ -24,9 +25,10 @@ small{      /* Sólo lo utilizo como referencia - QUITAR */
 }
 
 main{
-    background-image: url("/media/img/natura.jpg");
+    background-image: url("/media/img/natura.jpg"); 
     background-size: cover;
     border-radius: 1.5rem;
+    /* background-color: #000; */
 }
 
 header{
@@ -86,7 +88,7 @@ ul{
 }
 
 .home{
-    background-image: url("/media/img/hero01.png");
+    background-image: url("/media/img/img2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vw;
@@ -108,10 +110,10 @@ ul{
 }
 
 @keyframes carrousel {
-    0% {background-image: url("/media/img/hero01.png");} 
-    45% {background-image: url("/media/img/hero01.png");} 
-    55%{background-image: url("/media/img/hero02.png");}   
-    90% {background-image: url("/media/img/hero02.png");}  
+    0% {background-image: url("/media/img/Img3.jpg");} 
+    45% {background-image: url("/media/img/Img5.jpg");} 
+    55%{background-image: url("/media/img/Img2.jpg");}   
+    90% {background-image: url("/media/img/Img11.jpg");}  
 }
 
 .icons{
@@ -119,7 +121,7 @@ ul{
     text-align: center;
     color:#111;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgba(64,127,127,0.95);
+    background-color: rgba(127,127,64,0.85);
     border-radius: 2rem;
     padding: 5rem;
     gap: 3rem;
@@ -143,7 +145,7 @@ ul{
     display: grid;
     margin: 2rem;
     grid-template-columns: repeat(6, 1fr);
-    background-color: rgba(127,127,0,0.9);
+    background-color: rgba(127,127,64,0.85);
     border-radius: 2rem;
 }
 .mounth div{
@@ -206,7 +208,7 @@ footer{
     color: #000;
     text-shadow: 0 0 1rem #ccc;
     text-align: center;
-    background-image: url("/media/img/contact-bg.png");
+    background-image: url("/media/img/Img7.jpg");
     background-size: cover;    
     border-radius: 2rem;
     padding-right: 5vw;
